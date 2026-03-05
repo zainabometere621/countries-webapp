@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <main className="flex flex-col">
-      <section className="flex flex-col space-y-6 items-center justify-center  mt-10 mb-24">
+      <section className="flex flex-col space-y-6 items-center justify-center  mt-10">
         <h1 className="font-bold text-3xl">About WorldInfo</h1>
         <p className="text-lg text-gray-600 text-center">
           WorldInfo is your comprehensive guide to understanding the diverse
