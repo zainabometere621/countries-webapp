@@ -1,4 +1,5 @@
 import logo1 from "/src/assets/blue-logoss.png";
+import { NavLink } from "react-router-dom";
 export default function Navbar() {
   return (
     <nav className="w-full h-[10vh] bg-white shadow-md flex items-center justify-between px-10">
@@ -11,8 +12,8 @@ export default function Navbar() {
         <h1 className="font-bold text-2xl m-0">WorldInfo</h1>
       </div>
       <div className="flex space-x-4 text-base font-bold">
-        <p className="hover:text-blue-700">Home</p>
-        <p className="hover:text-blue-700">Countries</p>
+        <NavLink to = "/" className="hover:text-blue-700">Home</NavLink>
+        <NavLink to = "/countries" className="hover:text-blue-700">Countries</NavLink>
       </div>
     </nav>
   );

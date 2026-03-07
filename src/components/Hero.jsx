@@ -1,4 +1,5 @@
 import { Search } from "lucide-react";
+import { NavLink } from "react-router-dom";
 import logo2 from "/src/assets/white-logoss.png";
 import notification from "/src/assets/notification-icon.png";
 export default function Hero() {
@@ -17,7 +18,7 @@ export default function Hero() {
         <div className="flex space-x-4">
           <button className="bg-blue-700 hover:bg-blue-800 shadow-md text-white px-4 py-1 flex items-center justify-center text-base font-semibold rounded-md space-x-4 flex">
             <Search className="h-6 w-6" />
-            <p>Browse Countries</p>
+            <NavLink to= "/countries">Browse Countries</NavLink>
           </button>
           <button className="border border-gray-300 hover:bg-gray-300 hover:border-gray-400 shadow-md bg-white flex items-center justify-center px-3 py-1 text-base font-semibold rounded-md space-x-2 flex">
             <img
