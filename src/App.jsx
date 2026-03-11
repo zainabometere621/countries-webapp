@@ -11,7 +11,7 @@ export default function App() {
       <Route element={<Layout />}>
         <Route path="/" element={<LandingPage />} />
         <Route path="/countries" element={<AllCountriesPage />} />
-         <Route path="/country" element={<SpecificCountryPage />} />
+         <Route path="/country/:countryCode" element={<SpecificCountryPage />} />
       </Route>
     </Routes>
   );
