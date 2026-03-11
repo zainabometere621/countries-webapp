@@ -6,7 +6,7 @@ export default function SpecificCountryPage() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const res = await fetch("https://restcountries.com/v3.1/name/ghana");
+        const res = await fetch("https://restcountries.com/v3.1/alpha/{countryCode}");
         const data = await res.json();
         setCountries(data.slice(0, 20));
       } catch (error) {
