@@ -4,7 +4,8 @@ export default function Navbar() {
   return (
     <nav className="w-full h-[10vh] bg-white shadow-md flex items-center justify-between px-10">
       <div className="flex space-x-2 items-center justify-center">
-        <img
+        
+        <img 
           src={logo1}
           alt="world logo"
           className="h-16 w-16 object-contain"
