@@ -87,7 +87,9 @@ export default function SpecificCountryPage() {
                 <div>
                   <span className="flex itmes-center justify-between">
                     <p className="text-gray-400 text-base">Time Zone:</p>
-                    <span className="font-semibold text-base">{c.timezones}</span>
+                    <span className="font-semibold text-base">
+                      {c.timezones}
+                    </span>
                   </span>
                   <hr />
                 </div>
@@ -99,16 +101,34 @@ export default function SpecificCountryPage() {
                   <hr />
                 </div>
               </div>
-              <div className="p-2 bg-white text-md p-8 rounded-lg shadow-lg w-full">
+              <div className="p-2 bg-white text-md p-8 rounded-lg space-y-6 shadow-lg w-full">
                 <span className="flex space-x-2 items-center">
                   <MapPin className="h-6 w-6 text-green-700" />
                   <p className="font-semibold text-xl">Geographic data</p>
                 </span>
-                
-                <div>
-                  <span className="flex itmes-center justify-between">
-                    <p className="text-gray-400 text-base">Time Zone:</p>
-                    <span className="font-semibold text-base">{c.timezones}</span>
+                <div className="flex flex-col gap-2">
+                  <p className="text-gray-400 text-base">Region:</p>
+                  <span className="font-semibold text-base">{c.region}</span>
+                  <hr />
+                </div>
+                <div className="flex flex-col gap-2">
+                  <p className="text-gray-400 text-base">SubRegion:</p>
+                  <span className="font-semibold text-base">{c.subregion}</span>
+                  <hr />
+                </div>
+                <div className="flex flex-col gap-2">
+                  <p className="text-gray-400 text-base">Languages:</p>
+                  <span className="font-semibold text-base">
+                    {Object.values(c.languages ?? {}).join(", ")}
+                  </span>
+                  <hr />
+                </div>
+                <div className="flex flex-col gap-2">
+                  <p className="text-gray-400 text-base">Currencies:</p>
+                  <span className="font-semibold text-base">
+                    {Object.values(c.currencies ?? {})
+                      .map((currency) => currency.name)
+                      .join(", ")}
                   </span>
                   <hr />
                 </div>
