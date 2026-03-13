@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
 import AllCountriesPage from "./pages/AllCountriesPage";
 import SpecificCountryPage from "./pages/specificCountryPage";
+import About from "./components/About"
 import Layout from "./components/Layout";
 
 export default function App() {
@@ -13,6 +14,7 @@ export default function App() {
         <Route path="/countries" element={<AllCountriesPage />} />
          <Route path="/country/:countryCode" element={<SpecificCountryPage />} />
       </Route>
+      <Route path="/about" element={<About />} />
     </Routes>
   );
 }
