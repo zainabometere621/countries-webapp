@@ -9,8 +9,8 @@ export default function Hero() {
         <div className="h-24 w-24 bg-blue-700 rounded-full flex items-center justify-center">
           <img src={logo2} alt="world logo" className="h-16 w-16" />
         </div>
-        <h1 className="text-5xl font-bold">Explore the World's Countries</h1>
-        <p className="text-lg text-gray-600">
+        <h1 className="lg:text-5xl md:text-3xl text-xl font-bold">Explore the World's Countries</h1>
+        <p className="lg:text-lg md:text-lg text-base text-gray-600">
           Discover detailed information about countries around the globe. Access{" "}
           <br /> comprehensive data on population, geography, languages, and
           more.
