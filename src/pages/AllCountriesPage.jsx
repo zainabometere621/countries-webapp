@@ -24,12 +24,12 @@ export default function AllCountriesPage() {
   }
   return (
     <main className="flex flex-col gap-6 px-6 py-10 bg-gray-100">
-      <h1 className="text-4xl font-bold">All Countries</h1>
-      <p className="text-lg text-gray-600">
+      <h1 className="text-2xl lg:text-4xl font-bold">All Countries</h1>
+      <p className="text-base lg:text-lg text-gray-600">
         Explore countries from around the world
       </p>
       <section className="">
-        <div className="grid grid-cols-4 gap-10 mx-auto max-w-8xl my-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-10 mx-auto max-w-8xl my-6">
           {countries.map((c) => (
             <Link to={`/country/${c.cca2}`}>
               <div
