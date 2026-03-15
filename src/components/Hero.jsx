@@ -16,11 +16,11 @@ export default function Hero() {
           more.
         </p>
         <div className="flex space-x-4">
-          <button className="bg-blue-700 hover:bg-blue-800 shadow-md text-white px-4 py-1 flex items-center justify-center text-base font-semibold rounded-md space-x-4 flex">
+          <button className="bg-blue-700 text-sm lg:text-base hover:bg-blue-800 shadow-md text-white px-4 py-1 flex items-center justify-center text-base font-semibold rounded-md space-x-4 flex">
             <Search className="h-6 w-6" />
-            <NavLink to= "/countries">Browse Countries</NavLink>
+            <NavLink to= "/countries" >Browse Countries</NavLink>
           </button>
-          <button className="border border-gray-300 hover:bg-gray-300 hover:border-gray-400 shadow-md bg-white flex items-center justify-center px-3 py-1 text-base font-semibold rounded-md space-x-2 flex">
+          <button className="border border-gray-300 text-sm lg:text-base hover:bg-gray-300 hover:border-gray-400 shadow-md bg-white flex items-center justify-center px-3 py-1 text-base font-semibold rounded-md space-x-2 flex">
             <img
               src={notification}
               alt="notification icon"

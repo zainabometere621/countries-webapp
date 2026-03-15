@@ -4,7 +4,7 @@ export default function KeyFeatures() {
     <section className="flex flex-col items-center justify-center mt-24 space-y-6">
       <h1 className="font-bold text-3xl">Key Features</h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-32 pb-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-8 gap-4 lg:px-32 px-6 pb-20">
         {keyFeaturesCard.map((card, index) => {
           const Icon = card.icon;
 
